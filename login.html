@@ -58,6 +58,9 @@
             <div class="panel-heading">
             </div>
             <div class="">
+              <div class="alert alert-success" id="hiddenelement" role="alert" style="display:none">
+                Successfully Logged in.
+              </div>
               <form>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email address</label>
@@ -67,7 +70,7 @@
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
                 </div>
-                <button type="submit" class="btn btn-success btn-block">Submit</button>
+                <button type="submit" class="btn btn-success btn-block" onclick="post()">Submit</button>
                 <hr>
                 <a href="forgotpassword.html">Forgot Password?</a><br>
                 Don't have an account? <a href="signup.html">Register.</a>
@@ -95,6 +98,9 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+      function post() {
+        document.getElementById("hiddenelement").style.display = "block";
+      }
     </script>
   </body>
 </html>

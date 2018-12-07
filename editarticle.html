@@ -48,6 +48,9 @@
             <div class="panel-heading">
             </div>
             <div class="">
+              <div class="alert alert-success" id="hiddenelement" role="alert" style="display:none">
+                Success.
+              </div>
               <form>
                 <h3>Edit Article.</h3>
                 <div class="form-group">
@@ -59,7 +62,7 @@
                   <textarea name="name" rows="8" cols="80" class="form-control" id="article" placeholder="Enter Article"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" onclick="post()">Submit</button>
               </form>
             </div>
 
@@ -113,6 +116,9 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+      function post() {
+        document.getElementById("hiddenelement").style.display = "block";
+      }
     </script>
   </body>
 </html>
