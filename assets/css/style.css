@@ -1,0 +1,71 @@
+/**
+ * Code you need
+ */
+.scroll {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar; }
+
+  footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+  }
+
+.auth-container{
+  min-height: 400px;
+}
+.panel{
+  padding: 10px 10px;
+  border: 1px solid #cac9c9;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.panel-heading{
+  padding: 10px 0px;
+}
+.followers-avatar{
+  height: 40px;
+  width: 40px;
+}
+.btn-follow{
+  width:80px!important
+}
+.vam,
+.nav-item {
+  display: inline-block;
+  vertical-align: middle; }
+
+.navbar{
+  padding: 0;
+  border-bottom: 1px solid #dfe4dd;
+}
+.navbar-brand{
+  margin-top: -7px;
+}
+a {
+  color: #72a57e;
+}
+
+a:hover{
+  color: teal;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 5px 5px;
+}
+
+.navbar-avatar{
+  margin-top: -8px;
+}
+// Demo purposes only, proceed with caution on Windows!
+.scroll::-webkit-scrollbar {
+  display: none; }
