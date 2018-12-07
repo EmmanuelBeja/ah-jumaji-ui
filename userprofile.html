@@ -49,7 +49,7 @@
             </div>
             <div class="col-md-10">
               <br>
-              <h3>Jason Momoa  <a href="#" class="btn btn-outline-warning btn-sm"> Follow</a></h3>
+              <h3>Jason Momoa  <a href="#" id="follow" onclick="follow()" class="btn btn-outline-warning btn-sm"> Follow</a></h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
               </p>
@@ -173,7 +173,16 @@
        $("#page-content").html(data);
        document.getElementById("articles").style.borderBottom = "2px solid black";
     });
-	});
+	  });
+
+    function follow(){
+      var txt = document.getElementById("follow").textContent;
+      if (txt == 'Following') {
+        document.getElementById("follow").innerHTML = "Follow";
+      }else if (txt == 'Follow') {
+        document.getElementById("follow").innerHTML = "Following";
+      }
+    }
     </script>
   </body>
 </html>

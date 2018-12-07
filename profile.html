@@ -156,6 +156,8 @@
       });
     }
 
+
+
     function followers() {
       $.get("followers.html", function(data) {
        $("#page-content").html(data);
@@ -173,7 +175,16 @@
        $("#page-content").html(data);
        document.getElementById("articles").style.borderBottom = "2px solid black";
     });
-	});
+  	});
+
+    function follow(){
+      var txt = document.getElementById("follow").textContent;
+      if (txt == 'Following') {
+        document.getElementById("follow").innerHTML = "Follow";
+      }else if (txt == 'Follow') {
+        document.getElementById("follow").innerHTML = "Following";
+      }
+    }
     </script>
   </body>
 </html>
