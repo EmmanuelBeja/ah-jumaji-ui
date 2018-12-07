@@ -66,7 +66,12 @@ a:hover{
 .navbar-avatar{
   margin-top: -8px;
 }
-
+.card-text{
+  color:black!important;
+}
+.card-title{
+  color:black!important;
+}
 #page-content{
   min-height: 300px;
 }
