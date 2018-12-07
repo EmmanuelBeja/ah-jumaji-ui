@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Author's Haven</title>
   </head>
@@ -61,85 +62,32 @@
       <div class="row">
         <div class="col-md-12">
           <div class="row">
+            <div class="col-md-2">
+              <img src="assets/img/default-avatar.jpg" alt="" class="rounded-circle" style="height:160px;width:160px;">
+            </div>
+            <div class="col-md-10">
+              <br>
+              <h3>Killmonger</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+              </p>
 
+            </div>
           </div>
+          <hr>
+        </div>
+        <div class="col-md-12">
+         <ul class="list-inline text-center">
+           <li class="list-inline-item" id="article" onclick="articles()">Articles</li>
+           <li class="list-inline-item" id="followers" onclick="followers()">Followers</li>
+           <li class="list-inline-item" id="following" onclick="following()">Following</li>
+         </ul>
         </div>
 
 
-        <div class="col-md-8">
-          <h3 style="margin-top:30px;">Your Articles.</h3>
-            <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-              <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-                <img class="img img-responsive" src="assets/img/header2.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-              </div>
-              <div class="col-md-8" style="padding:5px 5px;">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="">By <i>Killmonger</i></a>
-              </div>
-            </div>
-
-            <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-              <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-                <img class="img img-responsive" src="assets/img/header3.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-              </div>
-              <div class="col-md-8" style="padding:5px 5px;">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="">By <i>Killmonger</i></a>
-              </div>
-            </div>
+        <div class="col-md-12" id="page-content">
 
 
-            <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-              <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-                <img class="img img-responsive" src="assets/img/header4.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-              </div>
-              <div class="col-md-8" style="padding:5px 5px;">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="">By <i>Killmonger</i></a>
-              </div>
-            </div>
-
-
-        </div>
-        <div class="col-md-4">
-          <h3 style="margin-top:30px;">Followers.</h3>
-          <div class="panel">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <img src="assets/img/avatar.png" alt="follower avatar" class="followers-avatar rounded-circle">
-                <a href="#">Edward Snowden</a>
-                <button type="button" name="button" class="btn btn-sm btn-outline-success float-right btn-follow">Following</button>
-              </li>
-              <li class="list-group-item">
-                <img src="assets/img/avatar.png" alt="follower avatar" class="followers-avatar rounded-circle">
-                <a href="#">Jason Momoa</a>
-                <button type="button" name="button" class="btn btn-sm btn-success float-right btn-follow">Follow</button>
-              </li>
-              <li class="list-group-item">
-                <img src="assets/img/avatar.png" alt="follower avatar" class="followers-avatar rounded-circle">
-                <a href="#">Motty Rickson</a>
-                <button type="button" name="button" class="btn btn-sm btn-outline-success float-right btn-follow">Following</button>
-              </li>
-              <li class="list-group-item">
-                <img src="assets/img/avatar.png" alt="follower avatar" class="followers-avatar rounded-circle">
-                <a href="#">Hulk</a>
-                <button type="button" name="button" class="btn btn-sm btn-outline-success float-right btn-follow">Following</button>
-              </li>
-              <li class="list-group-item">
-                <img src="assets/img/avatar.png" alt="follower avatar" class="followers-avatar rounded-circle">
-                <a href="#">Hawk Eye</a>
-                <button type="button" name="button" class="btn btn-sm btn-success float-right btn-follow">Follow</button>
-              </li>
-              <li class="list-group-item">
-                <img src="assets/img/avatar.png" alt="follower avatar" class="followers-avatar rounded-circle">
-                <a href="#">Bruce Wayne.</a>
-                <button type="button" name="button" class="btn btn-sm btn-outline-success float-right btn-follow">Following</button>
-              </li>
-            </ul>
-          </div>
         </div>
 
 
@@ -158,13 +106,11 @@
 <div class="modal" id="addpost">
   <div class="modal-dialog">
     <div class="modal-content">
-
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Add Post</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
-
       <!-- Modal body -->
       <div class="modal-body">
         <form>
@@ -174,18 +120,22 @@
           <button type="submit" class="btn btn-success">Submit</button>
         </form>
       </div>
-
       <!-- Modal footer -->
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
-
     </div>
   </div>
 </div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="assets/js/custom.js" charset="utf-8"></script>
@@ -193,6 +143,49 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
+
+      function articles() {
+        $.get("articles.html", function(data) {
+         $("#page-content").html(data);
+         document.getElementById("followers").style.borderBottom = "2px solid transparent";
+         document.getElementById("following").style.borderBottom = "2px solid transparent";
+         document.getElementById("articles").style.borderBottom = "2px solid black";
+         document.getElementById("followers").style.color = "#999";
+         document.getElementById("following").style.color = "#999";
+         document.getElementById("articles").style.color = "black";
+        });
+      }
+
+    function following() {
+      $.get("following.html", function(data) {
+       $("#page-content").html(data);
+       document.getElementById("followers").style.borderBottom = "2px solid transparent";
+       document.getElementById("following").style.borderBottom = "2px solid black";
+       document.getElementById("articles").style.borderBottom = "2px solid transprent";
+       document.getElementById("followers").style.color = "#999";
+       document.getElementById("following").style.color = "black";
+       document.getElementById("articles").style.color = "#999";
+      });
+    }
+
+    function followers() {
+      $.get("followers.html", function(data) {
+       $("#page-content").html(data);
+       document.getElementById("followers").style.borderBottom = "2px solid black";
+       document.getElementById("following").style.borderBottom = "2px solid transparent";
+       document.getElementById("articles").style.borderBottom = "2px solid transparent";
+       document.getElementById("followers").style.color = "black";
+       document.getElementById("following").style.color = "#999";
+       document.getElementById("articles").style.color = "#999";
+      });
+    }
+
+    $(document).ready(function() {
+    $.get("articles.html", function(data) {
+       $("#page-content").html(data);
+       document.getElementById("articles").style.borderBottom = "2px solid black";
+    });
+	});
     </script>
   </body>
 </html>

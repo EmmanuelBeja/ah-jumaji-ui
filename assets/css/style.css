@@ -66,6 +66,10 @@ a:hover{
 .navbar-avatar{
   margin-top: -8px;
 }
+
+#page-content{
+  height: 300px;
+}
 // Demo purposes only, proceed with caution on Windows!
 .scroll::-webkit-scrollbar {
   display: none; }
