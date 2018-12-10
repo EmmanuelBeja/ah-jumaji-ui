@@ -154,3 +154,11 @@ a:hover{
   padding: 3px 5px;
   color:white;
 }
+
+.profile-avatar{
+  height: 160px;
+    width: 160px;
+    align-items: right;
+    margin: 2px auto;
+    display: block;
+}
