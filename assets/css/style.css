@@ -17,7 +17,12 @@
     padding: 30px;
     margin-top: 20px;
   }
-
+.btn-success{
+  color:white!important;
+}
+.btn-outline-warning:hover{
+  color:white!important;
+}
 .auth-container{
   min-height: 400px;
 }
@@ -102,10 +107,11 @@ a:hover{
 .grid-item-img {
   display: block;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .grid-item-img:hover {
-  transform: translateY(-0.5rem) scale(1.0125);
+  transform: translateY(-0.3rem) scale(1.0125);
   box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
 }
 
@@ -131,4 +137,20 @@ a:hover{
 
 .article-header{
   margin: 10px
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.like-comment-button-section{
+  margin: -44px 10px auto auto;
+  padding: 0px 30px;
+}
+.like-comment-button-section a{
+  margin: 7px;
+  background-color: RGBA(0, 0, 0, 0.67);
+  border-radius: 10%;
+  padding: 3px 5px;
+  color:white;
 }
