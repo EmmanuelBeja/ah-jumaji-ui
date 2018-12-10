@@ -44,7 +44,7 @@
   vertical-align: middle; }
 
 .navbar{
-  padding: 0;
+  padding: 3px;
   border-bottom: 1px solid #dfe4dd;
 }
 .navbar-brand{
@@ -56,6 +56,7 @@ a {
 
 a:hover{
   color: teal;
+  text-decoration: none;
 }
 
 .nav-item {
@@ -78,3 +79,56 @@ a:hover{
 // Demo purposes only, proceed with caution on Windows!
 .scroll::-webkit-scrollbar {
   display: none; }
+
+
+/*masonry grids*/
+* { box-sizing: border-box; }
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+  padding: 5px;
+}
+
+.grid-item-img {
+  display: block;
+  width: 100%;
+  border-radius: 5%;
+}
+.grid-item-img:hover {
+  transform: translateY(-0.5rem) scale(1.0125);
+  box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.text-fit{
+  color:#3a3939;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.article-avatar{
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  border-radius: 50px;
+}
+
+.article-text{
+  padding-top: 5px;
+}
+
+.article-header{
+  margin: 10px
+}
