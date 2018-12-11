@@ -61,7 +61,7 @@
           <div class="loader-section"></div>
         </div>
       </div>
-      
+
     <nav class="navbar navbar-expand-lg navbar-light scroll">
       <div class="container">
         <a class="navbar-brand" href="index.html">Author's Haven</a>
@@ -137,13 +137,9 @@
         document.getElementById("hiddenelement").style.display = "block";
       }
       //summernote initialize
-      $('#summernote').summernote({
-        placeholder: 'Enter Article...',
-        tabsize: 2,
-        height: 100
-      });
 
       $(document).ready(function() {
+        $('#summernote').summernote();
          //preloader
         setTimeout(function() {
           $('#section-preloader').addClass('loaded');

@@ -328,3 +328,13 @@ a:hover{
 	  font: bold 2em 'Montserrat', sans-serif;
 	}
 }
+
+.note-table-popover{
+  display:none;
+}
+.note-image-popover{
+  display:none;
+}
+.note-link-popover{
+  display: none;
+}
