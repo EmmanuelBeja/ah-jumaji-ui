@@ -157,8 +157,15 @@ a:hover{
 
 .profile-avatar{
   height: 160px;
-    width: 160px;
-    align-items: right;
-    margin: 2px auto;
-    display: block;
+  width: 160px;
+  align-items: right;
+  margin: 2px auto;
+  display: block;
+}
+.profile-content{
+  margin-top:20px;
+}
+
+.edit-profile-button{
+  margin-left:10px
 }

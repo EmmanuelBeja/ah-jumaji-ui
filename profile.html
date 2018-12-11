@@ -45,14 +45,20 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-md-12" style="margin-top:20px;">
+        <div class="col-md-12 profile-content">
           <div class="row">
             <div class="col-md-3">
-              <img src="assets/img/default-avatar.jpg" alt="" class="rounded-circle profile-avatar" style="height:160px;width:160px;">
+              <img src="assets/img/default-avatar.jpg" alt="" class="rounded-circle profile-avatar" style="">
             </div>
             <div class="col-md-9">
               <br>
-              <h3>Killmonger <a href="editprofile.html" class="btn btn-outline-secondary btn-sm" style="margin-left:10px"> Edit Profile</a></h3>
+              <h3>
+                Killmonger
+                <a href="editprofile.html" class="btn btn-outline-secondary btn-sm edit-profile-button">
+                  <i class="fas fa-user-cog"></i>
+                 Edit Profile
+                </a>
+              </h3>
               <i class="fas fa-flag"></i> Kenya
               <br>
               <i class="fas fa-phone"></i> +245712991415
@@ -68,19 +74,19 @@
           <ul class="nav justify-content-center">
             <li class="nav-item" id="articles">
               <a class="nav-link active" href="#" onclick="articles()">
-                <span class="badge badge-secondary">10</span>
+                <span class="badge badge-pill badge-secondary">10</span>
                 Articles
               </a>
             </li>
             <li class="nav-item" id="followers" onclick="followers()">
               <a class="nav-link" href="#">
-                <span class="badge badge-secondary">200</span>
+                <span class="badge badge-pill badge-secondary">200</span>
                 Followers
               </a>
             </li>
             <li class="nav-item" id="following" onclick="following()">
               <a class="nav-link" href="#">
-                <span class="badge badge-secondary">100</span>
+                <span class="badge badge-pill badge-secondary">100</span>
                 Following
               </a>
             </li>
