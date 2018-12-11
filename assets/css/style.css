@@ -80,6 +80,7 @@ a:hover{
 }
 #page-content{
   min-height: 300px;
+  margin-top: 10px;
 }
 // Demo purposes only, proceed with caution on Windows!
 .scroll::-webkit-scrollbar {
