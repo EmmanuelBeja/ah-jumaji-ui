@@ -70,8 +70,19 @@
                 </p>
 
                 <hr style="margin: 25px auto;">
-                <a href="javascript:;" style="margin: auto 40px;" onclick="comments()">10 <i class="far fa-comment-alt"></i></a>
-                <a href="javascript:;" style="margin: auto 40px;" onclick="likes()">210 <i class="far fa-thumbs-up"></i></a>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" onclick="comments()">
+                    <a class="nav-link active" id="comments" href="#">10 Comment(s) <i class="far fa-comment-alt"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="likes" href="#">5 Like(s) <i class="far fa-thumbs-up"></a>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="comments" role="tabpanel" aria-labelledby="home-tab">...</div>
+                  <div class="tab-pane fade" id="likes" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                </div>
+
                 <div class="" id="content">
 
                 </div>
@@ -99,19 +110,19 @@
 
       function comments() {
         $.get("comments.html", function(data) {
-         $("#content").html(data);
+         $("#comments").html(data);
        });
       }
 
       function likes() {
         $.get("likes.html", function(data) {
-         $("#content").html(data);
+         $("#likes").html(data);
        });
       }
 
       $(document).ready(function() {
         $.get("comments.html", function(data) {
-          $("#content").html(data);
+          $("#comments").html(data);
         });
     	});
     </script>
