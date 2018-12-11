@@ -143,18 +143,6 @@ a:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.like-comment-button-section{
-  margin: -44px 10px auto auto;
-  padding: 0px 30px;
-}
-.like-comment-button-section a{
-  margin: 7px;
-  background-color: RGBA(0, 0, 0, 0.67);
-  border-radius: 10%;
-  padding: 3px 5px;
-  color:white;
-}
-
 .profile-avatar{
   height: 160px;
   width: 160px;
@@ -168,4 +156,12 @@ a:hover{
 
 .edit-profile-button{
   margin-left:10px
+}
+
+.delete{
+  color:#a02323;
+}
+
+.edit{
+  color:#4670c1;
 }
