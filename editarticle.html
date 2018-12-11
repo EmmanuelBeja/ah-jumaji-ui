@@ -11,12 +11,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Author's Haven</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
-
-    <!-- Include Editor style. -->
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_style.min.css" rel="stylesheet" type="text/css" />
-
+    <!-- include summernote css/js -->
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
   </head>
   <body>
 
@@ -65,7 +62,7 @@
                 </div>
                 <div class="form-group">
                   <label for="article">Article</label>
-                  <textarea name="name" rows="8" cols="80" class="form-control" id="froala-editor" placeholder="Enter Article"></textarea>
+                  <textarea name="name" rows="8" cols="80" class="form-control" id="summernote" placeholder="Enter Article"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-success" onclick="post()">Submit</button>
@@ -84,22 +81,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="assets/js/custom.js" charset="utf-8"></script>
-
-    <!-- Froala editor -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/mode/xml/xml.min.js"></script>
-    <!-- Include Editor JS files. -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/js/froala_editor.pkgd.min.js"></script>
     <script type="text/javascript">
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
-
-      //froala editor init
-      $(function() {
-        $('textarea#froala-editor').froalaEditor()
-      });
-
       function post() {
         document.getElementById("hiddenelement").style.display = "block";
       }
