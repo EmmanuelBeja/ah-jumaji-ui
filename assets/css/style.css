@@ -126,10 +126,10 @@ a:hover{
 }
 
 .article-avatar{
-  height: 35px;
-  width: 35px;
-  overflow: hidden;
-  border-radius: 50px;
+  height: 45px;
+    width: 45px;
+    overflow: hidden;
+    border-radius: 50px;
 }
 
 .article-text{
@@ -149,11 +149,8 @@ a:hover{
   padding: 0px 30px;
 }
 .like-comment-button-section a{
-  margin: 7px;
-  background-color: RGBA(0, 0, 0, 0.67);
-  border-radius: 10%;
-  padding: 3px 5px;
   color:white;
+  margin: auto 5px;
 }
 
 .profile-avatar{
@@ -329,6 +326,7 @@ a:hover{
 	}
 }
 
+/* hide summernote pop overs*/
 .note-table-popover{
   display:none;
 }
