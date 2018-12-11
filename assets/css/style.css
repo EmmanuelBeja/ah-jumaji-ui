@@ -178,3 +178,11 @@ a:hover{
 .edit{
   color:#4670c1;
 }
+
+.message{
+  margin-top: 0px;
+}
+
+.message-avatar{
+  margin-top: 10px;
+}
