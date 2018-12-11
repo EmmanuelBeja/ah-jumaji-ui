@@ -62,7 +62,7 @@
                 </div>
                 <div class="form-group">
                   <label for="article">Article</label>
-                  <textarea name="name" rows="8" cols="80" class="form-control" id="summernote" placeholder="Enter Article"></textarea>
+                  <textarea name="name" rows="8" cols="80" class="form-control" id="summernote" placeholder="Enter Article..."></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-success" onclick="post()">Submit</button>
@@ -88,6 +88,12 @@
       function post() {
         document.getElementById("hiddenelement").style.display = "block";
       }
+
+      $('#summernote').summernote({
+        placeholder: 'Enter Article...',
+        tabsize: 2,
+        height: 100
+      });
     </script>
   </body>
 </html>
