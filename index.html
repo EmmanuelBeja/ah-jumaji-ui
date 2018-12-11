@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Author's Haven</title>
+
+    <script src="assets/js/masonry.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
   </head>
   <body>
 
@@ -61,7 +64,7 @@
           <div class="loader-section"></div>
         </div>
       </div>
-      
+
 <div>
   <!--<header class="radius">-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light scroll">
@@ -73,8 +76,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto pull-left">
             <!--<li class="nav-item" data-id="categories" aria-controls="categories"> <a href="#" class="nav-link">Categories</a> </li>-->
-            <li class="nav-item"> <a href="#" class="nav-link">About</a> </li>
-            <li class="nav-item"> <a href="#" class="nav-link">Contact</a> </li>
+            <li class="nav-item"> <a href="#about" class="nav-link">About</a> </li>
+            <li class="nav-item"> <a href="#contact" class="nav-link">Contact</a> </li>
             <li class="nav-item"> <a href="login.html" class="nav-link btn btn-outline-warning btn-sm">Login</a> </li>
             <li class="nav-item"> <a href="signup.html" class="nav-link btn btn-outline-success  btn-sm">Signup</a> </li>
           </ul>
@@ -82,22 +85,22 @@
       </div>
     </nav>
     <div class="container submenu scroll" id="categories">
-      <li class="nav-item"><a class="nav-link" href="#">All</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Design">Design</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Photoshop">Photoshop</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Development">Development</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Coding">Coding</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Adventure">Adventure</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Entrepreneurship">Entrepreneurship</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Photography">Photography</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Art">Art</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Sports">Sports</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Music">Music</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Branding">Branding</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Illustration">Illustration</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Web">Web</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="UX">UX</a></li>
-      <li class="nav-item"><a class="nav-link" href="#" id="Print">Print</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#">All</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Design">Design</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Photoshop">Photoshop</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Development">Development</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Coding">Coding</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Adventure">Adventure</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Entrepreneurship">Entrepreneurship</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Photography">Photography</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Art">Art</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Sports">Sports</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Music">Music</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Branding">Branding</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Illustration">Illustration</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Web">Web</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="UX">UX</a></li>
+      <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Print">Print</a></li>
     </div>
   <!--</header>-->
 </div>
@@ -109,9 +112,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
   </ol>
-  <div class="carousel-inner" style="
-    height: 300px;
-">
+  <div class="carousel-inner" style="height: 300px;">
     <div class="carousel-item active">
       <img class="d-block w-100" src="assets/img/header1.jpg" alt="First slide">
       <div class="carousel-caption d-none d-md-block">
@@ -145,181 +146,234 @@
 </div>
 
     <div class="container">
-      <!-- Content here --
-      <div class="jumbotron" style="margin-top:40px;">
-        <!--<h1 class="display-4">Hello, world!</h1>--
 
-        <p class="lead">“I’am a Muslim but I can do anything to have him” Crazy girl ready to disregard her religious values just to get in bed with Citizen TV’s Bernard Ndong</p>
-        <hr class="my-4">
-        <p>A handful of male TV personalities have been put in awkward situations by ladies who are willing to do anything just to get in bed with them.At least two ladies have come ...</p>
-        <a class="btn btn-success btn-lg btn-circle" href="#" role="button">Read more</a>
-      </div>-->
-
-
-      <h2 style="margin-top:50px;">Featured Articles.</h2>
+      <h4 class="article-index-header text-center">
+        <i class="fas fa-align-right"></i>
+        <span id="category">All</span>
+        Articles
+      </h4>
       <br>
 
-      <div class="row">
 
-        <div class="col-md-12">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header5.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
+      <div class="grid">
+
+          <div class="grid-sizer"></div>
+          <div class="grid-item" id="1">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" class="grid-item-img"/>
+            </a>
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-12">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
-            </div>
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header1.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div class="col-md-6">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header2.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
+          <div class="grid-item" id="2">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"  class="grid-item-img"/>
+            </a>
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header3.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/wall1.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
+          <div class="grid-item" id="3">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"  class="grid-item-img"/>
+            </a>
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header4.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header3.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
+          <div class="grid-item" id="4">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"  class="grid-item-img"/>
+            </a>
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header4.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
+          <div class="grid-item" id="5">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"  class="grid-item-img"/>
+            </a>
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="grid-item" id="6">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"  class="grid-item-img"/>
+            </a>
+
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="grid-item" id="7">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg"  class="grid-item-img"/>
+            </a>
+
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="grid-item" id="8">
+            <a href="#">
+              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg"  class="grid-item-img"/>
+            </a>
+
+            <div class="row">
+              <div class="col-md-12 like-comment-button-section">
+                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
+                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
+              </div>
+              <div class="col-md-2 article-text">
+                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
+              </div>
+              <div class="col-md-9 article-text">
+                <a href="#">Jason Momoa</a>
+                <a href="#">
+                  <span class="text-fit">Number 10 will shock you</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
 
       </div>
 
 
-      <div class="jumbotron"  style="margin-top:70px;">
-        <!--<h1 class="display-4">Hello, world!</h1>-->
-        <p class="lead">“I’am a Muslim but I can do anything to have him” Crazy girl ready to disregard her religious values just to get in bed with Citizen TV’s Bernard Ndong</p>
-        <hr class="my-4">
-        <p>A handful of male TV personalities have been put in awkward situations by ladies who are willing to do anything just to get in bed with them.At least two ladies have come ...</p>
-        <a class="btn btn-success btn-lg btn-circle" href="#" role="button">Read more</a>
+      <div class="jumbotron" id="about">
+        <h1 class="text-center">About Us</h1>
+        <p class="lead text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
 
-
-      <div class="row">
-
+      <div class="row" id="contact">
         <div class="col-md-12">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header5.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
-            </div>
-          </div>
+          <h1 class="text-center">Get in Touch!</h1>
+          <h5 class="text-center text-muted">Have any queries?</h5>
         </div>
+        <div class="col-md-6">
+	          <p class="contact-details">
+              <i class="fas fa-mobile" style="font-size:25px;"></i> +254712991415<br>
+              <i class="fas fa-envelope" style="font-size:25px;"></i><a href="mailto:info@authorshaven.com"> info@authorshaven.com</a><br>
+              <i class="fas fa-map-marker-alt" style="font-size:25px;"></i> Along Mombasa - Malindi Highway<br>
+            </p>
+	      </div>
+        <div class="col-md-6">
+          <form method="POST" id="send" action="">
+			        <div class="row">
+			            <div class="col-md-6">
+			                <div class="form-group">
+      			            <input id="name" type="text" class="form-control" name="name" placeholder="Name">
+			                </div>
+			            </div>
+			            <div class="col-md-6">
+			                <div class="form-group">
+			                  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+			                </div>
+			            </div>
+			        </div>
 
-        <div class="col-md-12">
-          <div class="row" style="border: 1px solid #efefef;margin: 5px 0px 5px 0px;border-radius: 5px;">
-
-            <div class="col-md-8" style="padding:5px 5px;">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="">By <i>Jason Momoa</i></a>
-            </div>
-            <div class="col-md-4" style="padding: 0px 10px 0px 0px;">
-              <img class="img img-responsive" src="assets/img/header1.jpg" alt="Card image cap" style="height: 100%;width: 100%;overflow: hidden;">
-            </div>
-          </div>
+			        <div class="form-group">
+			            <input id="subject" type="text" class="form-control" name="subject" placeholder="Subject">
+			        </div>
+			        <div class="form-group">
+			            <textarea id="message" type="text" class="form-control" name="message" placeholder="Message" rows="4"></textarea>
+			        </div>
+			        <div class="form-group">
+			            <button type="submit" class="btn btn-success btn-block" name="contact" value="Submit"> Submit</button>
+			        </div>
+			    </form>
         </div>
-
       </div>
-
-      <div class="jumbotron"  style="margin-top:70px;">
-        <!--<h1 class="display-4">Hello, world!</h1>-->
-        <p class="lead">“I’am a Muslim but I can do anything to have him” Crazy girl ready to disregard her religious values just to get in bed with Citizen TV’s Bernard Ndong</p>
-        <hr class="my-4">
-        <p>A handful of male TV personalities have been put in awkward situations by ladies who are willing to do anything just to get in bed with them.At least two ladies have come ...</p>
-        <a class="btn btn-success btn-lg btn-circle" href="#" role="button">Read more</a>
-      </div>
-
 
 
 
@@ -354,6 +408,24 @@
           }
         }, 3000);
       });
+
+      //masonry initialize code
+      var grid = document.querySelector('.grid');
+      var msnry;
+      imagesLoaded( grid, function() {
+        // init Isotope after all images have loaded
+        msnry = new Masonry( grid, {
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          percentPosition: true
+        });
+      });
+
+      //switch categories
+      function categories(e){
+        var txt = e.target.textContent; //get clicked element content
+        document.getElementById("category").innerHTML = txt;
+      }
     </script>
   </body>
 </html>
