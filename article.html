@@ -13,6 +13,55 @@
   </head>
   <body>
 
+    <div id="preloader">
+        <div id="section-preloader" class="section-preloader">
+          <div class="animation-preloader">
+            <div class="txt-loading">
+              <span data-text-preloader="A" class="letters-loading">
+                A
+              </span>
+              <span data-text-preloader="u" class="letters-loading">
+                u
+              </span>
+              <span data-text-preloader="t" class="letters-loading">
+                t
+              </span>
+              <span data-text-preloader="h" class="letters-loading">
+                h
+              </span>
+              <span data-text-preloader="o" class="letters-loading">
+                o
+              </span>
+              <span data-text-preloader="r" class="letters-loading">
+                r
+              </span>
+              <span data-text-preloader="'s" class="letters-loading">
+                's
+              </span>
+              <span data-text-preloader=" " class="letters-loading">
+
+              </span>
+              <span data-text-preloader="H" class="letters-loading">
+                H
+              </span>
+              <span data-text-preloader="a" class="letters-loading">
+                a
+              </span>
+              <span data-text-preloader="v" class="letters-loading">
+                v
+              </span>
+              <span data-text-preloader="e" class="letters-loading">
+                e
+              </span>
+              <span data-text-preloader="n" class="letters-loading">
+                n
+              </span>
+            </div>
+          </div>
+          <div class="loader-section"></div>
+        </div>
+      </div>
+
   <nav class="navbar navbar-expand-lg navbar-light scroll">
     <div class="container">
       <a class="navbar-brand" href="index.html">Author's Haven</a>
@@ -87,7 +136,7 @@
                           <li class="list-group-item">
                             <div class="row">
                               <div class="col-md-1">
-                                <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                                <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar message-avatar rounded-circle">
                               </div>
                               <div class="col-md-11">
                                 <div class="panel message">
@@ -102,7 +151,7 @@
                           <li class="list-group-item">
                             <div class="row">
                               <div class="col-md-1">
-                                <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                                <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar message-avatar rounded-circle">
                               </div>
                               <div class="col-md-11">
                                 <div class="panel message">
@@ -126,14 +175,17 @@
                           <li class="list-group-item">
                             <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
                             <a href="#">Edward Snowden</a>
+                            <span class="float-right text-muted"> <i class="fas fa-clock"></i> Nov 8 2018</span>
                           </li>
                           <li class="list-group-item">
                             <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
                             <a href="#">Jason Momoa</a>
+                            <span class="float-right text-muted"> <i class="fas fa-clock"></i> Nov 8 2018</span>
                           </li>
                           <li class="list-group-item">
                             <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
                             <a href="#">Motty Rickson</a>
+                            <span class="float-right text-muted"> <i class="fas fa-clock"></i> Nov 8 2018</span>
                           </li>
                         </ul>
                       </div>
@@ -162,24 +214,20 @@
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
-      /*
-      function comments() {
-        $.get("comments.html", function(data) {
-         $("#comments").html(data);
-       });
-      }
 
-      function likes() {
-        $.get("likes.html", function(data) {
-         $("#likes").html(data);
-       });
-      }
-
+      //preloader
       $(document).ready(function() {
-        $.get("comments.html", function(data) {
-          $("#comments").html(data);
-        });
-    	});*/
+        setTimeout(function() {
+          $('#section-preloader').addClass('loaded');
+          $('body').removeClass('no-scroll-y');
+
+          if ($('#section-preloader').hasClass('loaded')) {
+            $('#preloader').delay(1000).queue(function() {
+              $(this).remove();
+            });
+          }
+        }, 3000);
+      });
     </script>
   </body>
 </html>

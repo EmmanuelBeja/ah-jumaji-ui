@@ -13,6 +13,55 @@
   </head>
   <body>
 
+    <div id="preloader">
+        <div id="section-preloader" class="section-preloader">
+          <div class="animation-preloader">
+            <div class="txt-loading">
+              <span data-text-preloader="A" class="letters-loading">
+                A
+              </span>
+              <span data-text-preloader="u" class="letters-loading">
+                u
+              </span>
+              <span data-text-preloader="t" class="letters-loading">
+                t
+              </span>
+              <span data-text-preloader="h" class="letters-loading">
+                h
+              </span>
+              <span data-text-preloader="o" class="letters-loading">
+                o
+              </span>
+              <span data-text-preloader="r" class="letters-loading">
+                r
+              </span>
+              <span data-text-preloader="'s" class="letters-loading">
+                's
+              </span>
+              <span data-text-preloader=" " class="letters-loading">
+
+              </span>
+              <span data-text-preloader="H" class="letters-loading">
+                H
+              </span>
+              <span data-text-preloader="a" class="letters-loading">
+                a
+              </span>
+              <span data-text-preloader="v" class="letters-loading">
+                v
+              </span>
+              <span data-text-preloader="e" class="letters-loading">
+                e
+              </span>
+              <span data-text-preloader="n" class="letters-loading">
+                n
+              </span>
+            </div>
+          </div>
+          <div class="loader-section"></div>
+        </div>
+      </div>
+      
 <div>
   <!--<header class="radius">-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light scroll">
@@ -101,6 +150,20 @@
       function post() {
         document.getElementById("hiddenelement").style.display = "block";
       }
+
+      //preloader
+      $(document).ready(function() {
+        setTimeout(function() {
+          $('#section-preloader').addClass('loaded');
+          $('body').removeClass('no-scroll-y');
+
+          if ($('#section-preloader').hasClass('loaded')) {
+            $('#preloader').delay(1000).queue(function() {
+              $(this).remove();
+            });
+          }
+        }, 3000);
+      });
     </script>
   </body>
 </html>
