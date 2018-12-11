@@ -178,9 +178,9 @@
     }
 
     //hide element
-    function hideel() {
-      //console.log(e.target.id);
-      document.getElementById("hidenel").style.display = "none";
+    function hideel(e) {
+      var el = e.target.id
+      el.style.display = "none";
     }
 
     </script>
