@@ -147,7 +147,13 @@ a:hover{
   margin: -44px 10px auto auto;
   padding: 0px 30px;
 }
-
+.like-comment-button-section a{
+  margin: 7px;
+  background-color: RGBA(0, 0, 0, 0.67);
+  border-radius: 10%;
+  padding: 3px 5px;
+  color:white;
+}
 
 .profile-avatar{
   height: 160px;
