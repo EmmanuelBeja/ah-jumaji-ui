@@ -323,16 +323,79 @@ a:hover{
   }
 }
 
+@media screen and (max-width: 992px) {
+	.section-preloader .animation-preloader .txt-loading {
+	  font: bold 3.5em 'Montserrat', sans-serif;
+	}
+  body{
+    font-size: 10px;
+  }
+  .article-avatar {
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+}
+
 @media screen and (max-width: 767px) {
 	.section-preloader .animation-preloader .txt-loading {
 	  font: bold 3.5em 'Montserrat', sans-serif;
 	}
+  body{
+    font-size: 10px;
+  }
+  .article-avatar {
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  .grid{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .grid-item{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media screen and (max-width: 500px) {
 	.section-preloader .animation-preloader .txt-loading {
 	  font: bold 2em 'Montserrat', sans-serif;
 	}
+  body{
+    font-size: 10px;
+  }
+  .article-avatar {
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+  .grid{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .grid-item{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 /* hide summernote pop overs*/
