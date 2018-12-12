@@ -82,7 +82,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto pull-left">
           <li class="nav-item"> <a href="home.html" class="nav-link"> <i class="fas fa-home"></i> Home</a> </li>
-
+          <li class="nav-item"> <a href="javascript:;" class="nav-link" data-toggle="modal" data-target="#search"><i class="fas fa-search"></i> Search</a> </li>
           <li class="nav-item">
             <a href="createarticle.html" class="nav-link btn btn-success btn-sm">
               <i class="fas fa-plus-square"></i>
@@ -301,6 +301,27 @@
 
     </div>
     <!-- container end-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title" id="exampleModalLabel"> <i class="fas fa-search"></i> Search</h5>
+            <br>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search..." aria-label="Search Content" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-outline-info" type="button"> <i class="fas fa-search"></i> Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
