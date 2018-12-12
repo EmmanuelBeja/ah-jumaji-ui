@@ -196,8 +196,6 @@
                   <a href="#">Motty Rickson</a>
                   <span class="float-right text-muted"> <i class="fas fa-clock"></i> Nov 8 2018</span>
                 </li>
-                <br />
-                <a href="likes.html" class="btn btn-block btn-lg btn-light">Load More...</a>
               </ul>
             </div>
           </div>
@@ -250,7 +248,7 @@
       })
 
 
-      $.get("./loaders/article-loader.html", function(data) {
+      $.get("./loaders/article-personal-loader.html", function(data) {
         $("#article-content").html(data);
         setTimeout(function() {
           $("#loader-data").addClass("loader-data-hide");

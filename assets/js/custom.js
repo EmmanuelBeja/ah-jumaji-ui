@@ -1,4 +1,4 @@
-(function (window, document, undefined) {
+(function(window, document, undefined) {
   'use strict';
 
   // Select nav items that have submenus
@@ -7,7 +7,7 @@
   var i = 0;
 
   // Show the submenu by toggling the relevant class names
-  function showSubmenu (event) {
+  function showSubmenu(event) {
     // We lose reference of this when filtering the nav items
     var self = this;
 
@@ -22,7 +22,7 @@
     var otherSubmenu = Array.prototype.filter.call(
       submenu.parentNode.children,
       function(child) {
-        if ( child !== submenu ) {
+        if (child !== submenu) {
           removeChildClass(child);
         }
       });
@@ -32,7 +32,7 @@
     var otherItem = Array.prototype.filter.call(
       self.parentNode.children,
       function(child) {
-        if ( child !== self ) {
+        if (child !== self) {
           removeChildClass(child);
         }
       });
@@ -44,13 +44,13 @@
   // Remove the active class
   function removeChildClass(el) {
     // Check if it exists, then remove
-    if ( el.classList.contains(active) ) {
+    if (el.classList.contains(active)) {
       el.classList.remove(active);
     }
   }
 
   // On clicks show submenus
-  for ( i = 0; i < hasSubmenu.length; i++ ) {
+  for (i = 0; i < hasSubmenu.length; i++) {
     hasSubmenu[i].addEventListener('click', showSubmenu);
   }
 })(window, document);

@@ -99,21 +99,51 @@
           <div class="panel-heading">
           </div>
           <div class="">
-            <div class="alert alert-success" id="hiddenelement" role="alert">
-              Success.
-            </div>
             <form>
-              <h3>Create Article.</h3>
-              <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" placeholder="Number 10 will shock you">
+              <div class="alert alert-success" id="hiddenelement" role="alert">
+                Success.
               </div>
-              <div class="form-group">
-                <label for="article">Article</label>
-                <textarea name="name" rows="8" cols="80" class="form-control" id="summernote" placeholder="Enter Article..."></textarea>
+              <h3>Edit Profile.</h3>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="username" class="form-control" id="username" value="Killmonger" placeholder="Enter username">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="email" value="killmonger@avengers.com" placeholder="Enter email">
+                  </div>
+                </div>
               </div>
 
-              <button type="submit" class="btn btn-success" onclick="post()">Submit</button>
+
+              <div class="form-group">
+                <label for="image">Image</label>
+                <br>
+                <input type="file" id="image">
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" class="form-control" id="country" placeholder="Enter Country">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="bio">Bio</label>
+                <textarea name="name" rows="8" cols="80" class="form-control" id="summernote" placeholder="Enter Bio" autofocus></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Submit</button>
             </form>
           </div>
 
@@ -140,11 +170,14 @@
     function post() {
       document.getElementById("hiddenelement").style.display = "block";
     }
-    //summernote initialize
 
-    $(document).ready(function() {
-      $('#summernote').summernote();
+    //summernote initialize
+    $('#summernote').summernote({
+      placeholder: 'Enter Article...',
+      tabsize: 2,
+      height: 100
     });
+
   </script>
 </body>
 

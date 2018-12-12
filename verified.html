@@ -1,162 +1,114 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Author's Haven</title>
-  </head>
-  <body>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <div id="preloader">
-        <div id="section-preloader" class="section-preloader">
-          <div class="animation-preloader">
-            <div class="txt-loading">
-              <span data-text-preloader="A" class="letters-loading">
-                A
-              </span>
-              <span data-text-preloader="u" class="letters-loading">
-                u
-              </span>
-              <span data-text-preloader="t" class="letters-loading">
-                t
-              </span>
-              <span data-text-preloader="h" class="letters-loading">
-                h
-              </span>
-              <span data-text-preloader="o" class="letters-loading">
-                o
-              </span>
-              <span data-text-preloader="r" class="letters-loading">
-                r
-              </span>
-              <span data-text-preloader="'s" class="letters-loading">
-                's
-              </span>
-              <span data-text-preloader=" " class="letters-loading">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-              </span>
-              <span data-text-preloader="H" class="letters-loading">
-                H
-              </span>
-              <span data-text-preloader="a" class="letters-loading">
-                a
-              </span>
-              <span data-text-preloader="v" class="letters-loading">
-                v
-              </span>
-              <span data-text-preloader="e" class="letters-loading">
-                e
-              </span>
-              <span data-text-preloader="n" class="letters-loading">
-                n
-              </span>
-            </div>
-          </div>
-          <div class="loader-section"></div>
-        </div>
-      </div>
+  <title>Author's Haven</title>
+</head>
 
-<div>
-  <!--<header class="radius">-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light scroll">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Author's Haven</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto pull-left">
-            <li class="nav-item"> <a href="login.html" class="nav-link btn btn-outline-warning btn-sm">Login</a> </li>
-            <li class="nav-item"> <a href="signup.html" class="nav-link btn btn-outline-success  btn-sm">Signup</a> </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  <!--</header>-->
-</div>
-<!--</nav>-->
+<body>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="assets/img/header1.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>Verify</h1>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Author's Haven</a>
+      <div class="" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pull-left">
+          <span class="sm-hide">
+            <li class="nav-item"> <a href="aboutus.html" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a> </li>
+            <li class="nav-item"> <a href="contactus.html" class="nav-link"><i class="fas fa-comments"></i> Contact Us</a> </li>
+            <li class="nav-item"> <a href="index.html" class="btn btn-outline-warning btn-sm">Login</a> </li>
+            <li class="nav-item"> <a href="register.html" class="btn btn-outline-success  btn-sm">Signup</a> </li>
+          </span>
+          <li class="nav-item dropdown sm-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-align-right"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="aboutus.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+              <li> <a href="contactus.html" class="dropdown-item"> <i class="fas fa-comments"></i> Contact Us</a> </li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+              <li><a class="dropdown-item" href="register.html"><i class="fas fa-sign-in-alt"></i> Sign Up</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
+  </nav>
 
-    <div class="container auth-container">
 
-      <div class="row">
-        <div class="col-md-4 offset-md-4">
-          <div class="panel panel-default">
-            <div class="panel-heading">
+
+  <div class="row login-container">
+
+    <div class="col-md-6 offset-md-3">
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+
+      <div class="panel panel-default" id="login-form">
+        <div class="panel-heading">
+          <h3>Verify.</h3>
+          <hr>
+        </div>
+        <div class="panel-body">
+          <form>
+            <div class="alert alert-primary" role="alert">
+              Enter your Password.
             </div>
-            <div class="">
-              <form>
-                <div class="alert alert-primary" role="alert">
-                    Enter your Password.
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
-                </div>
-                <div class="form-group">
-                  <label for="confirmpassword">Confirm Password</label>
-                  <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
-                </div>
-                <button type="submit" class="btn btn-success btn-block">Submit</button>
-                <hr>
-                Don't have an account? <a href="signup.html">Register.</a>
-              </form>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter Password" required>
             </div>
-
-          </div>
+            <div class="form-group">
+              <label for="confirmpassword">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-success btn-block">Submit</button>
+            <hr>
+            Don't have an account? <a href="register.html">Register.</a>
+          </form>
         </div>
       </div>
 
     </div>
-
-    <footer>
-      copyright 2018
-    </footer>
+  </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/js/custom.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    //tooltip initialize
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
 
+
+    $(document).ready(function() {
       //preloader
-      $(document).ready(function() {
-        setTimeout(function() {
-          $('#section-preloader').addClass('loaded');
-          $('body').removeClass('no-scroll-y');
+      setTimeout(function() {
+        $('#section-preloader').addClass('loaded');
+        $('body').removeClass('no-scroll-y');
 
-          if ($('#section-preloader').hasClass('loaded')) {
-            $('#preloader').delay(1000).queue(function() {
-              $(this).remove();
-            });
-          }
-        }, 3000);
-      });
-    </script>
-  </body>
+        if ($('#section-preloader').hasClass('loaded')) {
+          $('#preloader').delay(1000).queue(function() {
+            $(this).remove();
+          });
+        }
+      }, 3000);
+    });
+  </script>
+</body>
+
 </html>

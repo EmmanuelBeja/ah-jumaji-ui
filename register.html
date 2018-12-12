@@ -12,10 +12,10 @@
   <link rel="stylesheet" href="assets/css/style.css">
 
   <title>Author's Haven</title>
-
 </head>
 
 <body>
+
 
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
@@ -48,29 +48,51 @@
 
 
     <div class="row login-container">
-
-      <div class="col-md-6 offset-md-3">
+      <div class="col-md-6">
         <div class="bg-circle-1 bg-circle"></div>
         <div class="bg-circle-2 bg-circle"></div>
         <div class="bg-circle-3 bg-circle"></div>
+        <div class="welcome">
+          <h1 class="text-muted">Welcome to Author's Haven!</h1>
+          <br>
+          <h4>
+            "The currency of blogging is authenticity and trust"
+            <br>
+          </h4>
+          <h6><i class="text-muted">~ Jason Calacanis</i></h6>
+        </div>
+      </div>
+      <div class="col-md-6">
 
         <div class="panel panel-default" id="login-form">
           <div class="panel-heading">
-            <h3>Forgot Password.</h3>
+            <h3>Create Account.</h3>
             <hr>
           </div>
           <div class="panel-body">
-            <div class="alert alert-success" id="hiddenelement" role="alert">
-              Success. A email has been sent to you to change your password
+            <div class="alert alert-success" id="signuphiddenelement" role="alert">
+              Successfully Signed up
             </div>
             <form>
+              <div class="alert alert-success" id="signuphiddenelement" role="alert">
+                Successfully signed up. An email has been sent to you for verification.
+              </div>
+
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" minlength="4" maxlength="30" placeholder="Enter Username" required>
+              </div>
               <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" class="form-control" id="email" placeholder="Enter email" required>
               </div>
-              <button type="submit" class="btn btn-success btn-block" onclick="post()">Submit</button>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+              </div>
+              <button type="submit" class="btn btn-success btn-block" onclick="register-post()">Submit</button>
               <hr>
-              Don't have an account? <a href="register.html">Register.</a>
+              Already have an account? <a href="index.html">Login.</a>
             </form>
           </div>
         </div>
@@ -90,6 +112,7 @@
     $(function() {
       $('[data-toggle="tooltip"]').tooltip()
     });
+
   </script>
 </body>
 

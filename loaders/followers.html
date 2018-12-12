@@ -35,13 +35,13 @@
   </div>
 </div>
 <script type="text/javascript">
-  function follow(e){
+  function follow(e) {
     var txt = document.getElementById(e.target.id).textContent;
     if (txt == 'Following') {
       document.getElementById(e.target.id).innerHTML = "Follow";
       document.getElementById(e.target.id).classList.remove("btn-outline-success");
       document.getElementById(e.target.id).classList.add("btn-success");
-    }else if (txt == 'Follow') {
+    } else if (txt == 'Follow') {
       document.getElementById(e.target.id).innerHTML = "Following";
       document.getElementById(e.target.id).classList.remove("btn-success");
       document.getElementById(e.target.id).classList.add("btn-outline-success");

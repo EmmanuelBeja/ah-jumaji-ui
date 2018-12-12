@@ -1,110 +1,110 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Author's Haven</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/js/masonry.min.js"></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <title>Author's Haven</title>
 
-    <!-- Froala editor-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+  <script src="assets/js/masonry.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+</head>
 
-    <!-- Include Editor style. -->
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_style.min.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+<body>
 
-    <div id="preloader">
-  			<div id="section-preloader" class="section-preloader">
-  				<div class="animation-preloader">
-  					<div class="txt-loading">
-  						<span data-text-preloader="A" class="letters-loading">
-  							A
-  						</span>
-  						<span data-text-preloader="u" class="letters-loading">
-  							u
-  						</span>
-  						<span data-text-preloader="t" class="letters-loading">
-  							t
-  						</span>
-  						<span data-text-preloader="h" class="letters-loading">
-  							h
-  						</span>
-  						<span data-text-preloader="o" class="letters-loading">
-  							o
-  						</span>
-  						<span data-text-preloader="r" class="letters-loading">
-  							r
-  						</span>
-  						<span data-text-preloader="'s" class="letters-loading">
-  							's
-  						</span>
-  						<span data-text-preloader=" " class="letters-loading">
 
-  						</span>
-              <span data-text-preloader="H" class="letters-loading">
-  							H
-  						</span>
-  						<span data-text-preloader="a" class="letters-loading">
-  							a
-  						</span>
-  						<span data-text-preloader="v" class="letters-loading">
-  							v
-  						</span>
-  						<span data-text-preloader="e" class="letters-loading">
-  							e
-  						</span>
-              <span data-text-preloader="n" class="letters-loading">
-  							n
-  						</span>
-  					</div>
-  				</div>
-  				<div class="loader-section"></div>
-  			</div>
-  		</div>
-
-  <nav class="navbar navbar-expand-lg navbar-light scroll">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Author's Haven</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <a class="navbar-brand" href="home.html">Author's Haven</a>
+      <div class="" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto pull-left">
-          <li class="nav-item"> <a href="home.html" class="nav-link"> <i class="fas fa-home"></i> Home</a> </li>
-          <li class="nav-item"> <a href="javascript:;" class="nav-link" data-toggle="modal" data-target="#search"><i class="fas fa-search"></i> Search</a> </li>
-          <li class="nav-item">
-            <a href="createarticle.html" class="nav-link btn btn-success btn-sm">
-              <i class="fas fa-plus-square"></i>
-              Add Post
+          <span class="sm-hide">
+            <li class="nav-item active"> <a href="home.html" class="nav-link"> <i class="fas fa-home"></i> Home</a> </li>
+            <li class="nav-item"> <a href="javascript:;" class="nav-link" data-toggle="modal" data-target="#search"><i class="fas fa-search"></i> Search</a> </li>
+            <li class="nav-item dropdown">
+              <a href="notifications.html" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="badge badge-danger notifications-badge">5</span>
+                <i class="fas fa-bell"></i>
+                Notifications
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <div class="dropdown-divider"></div>
+                <li class="dropdown-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <div class="dropdown-divider"></div>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/img/killmonger.jpg" alt="follower avatar" class="followers-avatar navbar-avatar rounded-circle">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="createarticle.html" class="nav-link btn btn-success btn-sm">
+                <i class="fas fa-plus-square"></i>
+                Add Post
+              </a>
+            </li>
+          </span>
+          <li class="nav-item dropdown sm-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-align-right"></i>
             </a>
-          </li>
-          <li class="nav-item">
-            <a href="profile.html" class="nav-link">
-              <img src="assets/img/killmonger.jpg" alt="follower avatar" class="followers-avatar navbar-avatar rounded-circle">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link btn btn-info text-white btn-sm">
-              <i class="fas fa-sign-out-alt"></i>
-              Logout
-            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="createarticle.html"><i class="fas fa-plus-square"></i> Add Post</a></li>
+              <li><a class="dropdown-item" href="javascript:;" data-toggle="modal" data-target="#search"><i class="fas fa-search"></i> Search</a></li>
+              <li> <a href="notifications.html" class="dropdown-item"> <span class="badge badge-danger">5</span> <i class="fas fa-bell"></i> Notifications</a> </li>
+              <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="container submenu scroll" id="categories">
+  <br>
+  <div class="container scroll" id="categories">
     <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#">All</a></li>
     <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Design">Design</a></li>
     <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Photoshop">Photoshop</a></li>
@@ -123,249 +123,127 @@
     <li class="nav-item" onclick="categories(event)"><a class="nav-link" href="#" id="Print">Print</a></li>
   </div>
 
-    <!-- container start -->
-    <div class="container">
+  <!-- container start -->
+  <div class="container">
 
-      <h4 class="article-header">
-        <i class="fas fa-align-right"></i>
-        <span id="category">All</span>
-        Articles
-      </h4>
+    <h4 class="article-header">
+      <i class="fas fa-align-right"></i>
+      <span id="category">All</span>
+      Articles
+    </h4>
 
-      <div class="grid">
+    <div class="grid" id="articles-data">
 
-          <div class="grid-sizer"></div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" class="grid-item-img"/>
-
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg"  class="grid-item-img"/>
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg"  class="grid-item-img"/>
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg"  class="grid-item-img"/>
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg"  class="grid-item-img"/>
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg"  class="grid-item-img"/>
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg"  class="grid-item-img"/>
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item">
-            <a href="article.html">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg"  class="grid-item-img"/>
-            </a>
-            <div class="row">
-              <div class="col-md-12 like-comment-button-section">
-                <a href="#" class="float-right btn btn-success btn-sm">10 <i class="far fa-comment-alt"></i></a>
-                <a href="#" class="float-right btn btn-info btn-sm">210 <i class="far fa-thumbs-up"></i></a>
-              </div>
-              <div class="col-md-2 article-text">
-                <img class="img img-responsive article-avatar" src="assets/img/default-avatar1.jpg" alt="">
-              </div>
-              <div class="col-md-9 article-text">
-                <a href="userprofile.html">Jason Momoa</a>
-                <a href="article.html">
-                  <span class="text-fit">Number 10 will shock you</span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-      </div>
 
     </div>
-    <!-- container end-->
 
-    <!-- Modal -->
-    <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <h5 class="modal-title" id="exampleModalLabel"> <i class="fas fa-search"></i> Search</h5>
-            <br>
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Search..." aria-label="Search Content" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <button class="btn btn-outline-info" type="button"> <i class="fas fa-search"></i> Search</button>
+  </div>
+  <!-- container end-->
+
+  <!-- Search Modal -->
+  <div class="modal fade" id="search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-1">
+              <i class="fas fa-search fa-2x sm-hide"></i>
+            </div>
+            <div class="col-md-10">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search..." aria-label="Search Content" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-info" type="button"> Search</button>
+                </div>
               </div>
+            </div>
+            <div class="col-md-1">
+              <button type="button" class="close sm-hide" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/js/custom.js" charset="utf-8"></script>
-    <script type="text/javascript">
+  <!-- Report Modal -->
+  <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <h5>Report Article.</h5>
+          <hr>
+          <div class="form">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="spam">
+              <label class="form-check-label" for="spam"> Spam</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="spam">
+              <label class="form-check-label" for="spam"> Harassment</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="spam">
+              <label class="form-check-label" for="spam"> Rules Violation</label>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-sm btn-success">Submit</button>
+            <button type="button" class="btn btn-sm btn-secondary float-right" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js" charset="utf-8"></script>
+  <script type="text/javascript">
     //tooltip initialize
-    $(function () {
+    $(function() {
       $('[data-toggle="tooltip"]').tooltip()
     })
+
+    //switch categories
+    function categories(e) {
+      var txt = e.target.textContent; //get clicked element content
+      document.getElementById("category").innerHTML = txt;
+    }
 
     //masonry initialize code
     var grid = document.querySelector('.grid');
     var msnry;
-    imagesLoaded( grid, function() {
+    imagesLoaded(grid, function() {
       // init Isotope after all images have loaded
-      msnry = new Masonry( grid, {
+      msnry = new Masonry(grid, {
         itemSelector: '.grid-item',
         columnWidth: '.grid-sizer',
         percentPosition: true
       });
     });
 
-    //switch categories
-    function categories(e){
-      var txt = e.target.textContent; //get clicked element content
-      document.getElementById("category").innerHTML = txt;
-    }
 
-    //preloader
-    $(document).ready(function() {
+    $.get("./loaders/articles-home-loader.html", function(data) {
+      $("#articles-data").html(data);
       setTimeout(function() {
-        $('#section-preloader').addClass('loaded');
-        $('body').removeClass('no-scroll-y');
-
-        if ($('#section-preloader').hasClass('loaded')) {
-          $('#preloader').delay(1000).queue(function() {
-            $(this).remove();
+        $("#loader-data").addClass("loader-data-hide");
+        $("#loaded-data").addClass("loaded-data-show");
+        imagesLoaded(grid, function() {
+          // init Isotope after all images have loaded
+          msnry = new Masonry(grid, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true
           });
-        }
+        });
       }, 3000);
     });
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>

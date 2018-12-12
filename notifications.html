@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Author's Haven</title>
+
+  <script src="assets/js/masonry.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Froala editor-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+
+  <!-- Include Editor style. -->
+  <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Author's Haven</a>
+      <div class="" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto pull-left">
+          <span class="sm-hide">
+            <li class="nav-item"> <a href="home.html" class="nav-link"> <i class="fas fa-home"></i> Home</a> </li>
+            <li class="nav-item active"> <a href="notifications.html" class="nav-link"> <span class="badge badge-danger notifications-badge">5</span> <i class="fas fa-bell"></i> Notifications</a> </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/img/killmonger.jpg" alt="follower avatar" class="followers-avatar navbar-avatar rounded-circle">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <div class="dropdown-divider"></div>
+                <li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+              </ul>
+            </li>
+          </span>
+          <li class="nav-item dropdown sm-dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-align-right"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="createarticle.html"><i class="fas fa-plus-square"></i> Add Post</a></li>
+              <li> <a href="notifications.html" class="dropdown-item"> <span class="badge badge-danger">5</span> <i class="fas fa-bell"></i> Notifications</a> </li>
+              <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- container start -->
+  <div class="container">
+
+
+
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+
+        <div class="panel">
+          <div class="panel-body">
+            <h6 class="article-header">
+              <i class="fas fa-exclamation-triangle"></i>
+              Notifications.
+            </h6>
+            <hr>
+
+            <div class="col-md-12">
+              <ul class="list-group list-group-flush">
+                <a href="article.html">
+                </a>
+                <li class="list-group-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="float-right text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <li class="list-group-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="float-right text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <li class="list-group-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="float-right text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <li class="list-group-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="float-right text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+                <li class="list-group-item">
+                  <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar rounded-circle">
+                  <a href="#">Edward Snowden</a> published a new article.
+                  <span class="float-right"> <a href="#" class="btn btn-light btn-sm"> <i class="fas fa-check-circle"></i> Mark As Read</a> </span>
+                  <br>
+                  <i class="float-right text-muted"> <span class="fas fa-clock "></span> 5 Hrs ago</i>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+  </div>
+  <!-- container end-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    //tooltip initialize
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+</body>
+
+</html>

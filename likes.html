@@ -10,10 +10,23 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
-  <title>Author's Haven: Number 10 will shock you</title>
+
+  <title>Author's Haven</title>
+
+  <script src="assets/js/masonry.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+  <!-- Froala editor-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.25.0/codemirror.min.css">
+
+  <!-- Include Editor style. -->
+  <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/froala-editor@2.9.1/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
+
 
   <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
@@ -79,6 +92,7 @@
               <i class="fas fa-align-right"></i>
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="createarticle.html"><i class="fas fa-plus-square"></i> Add Post</a></li>
               <li> <a href="notifications.html" class="dropdown-item"> <span class="badge badge-danger">5</span> <i class="fas fa-bell"></i> Notifications</a> </li>
               <li><a class="dropdown-item" href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
               <div class="dropdown-divider"></div>
@@ -90,95 +104,22 @@
     </div>
   </nav>
 
+  <!-- container start -->
   <div class="container">
 
+
+
     <div class="row">
+      <div class="col-md-8 offset-md-2">
 
-      <div class="col-md-12">
+        <div class="panel">
+          <div class="panel-body">
+            <h6 class="article-header">
+              <i class="fas fa-thumbs-up"></i>
+              Likes.
+            </h6>
+            <hr>
 
-        <div id="article-content">
-
-        </div>
-
-        <div class="row article-bottom">
-          <div class="col-md-12">
-            <a href="#" class="article-more"><i class="far fa-thumbs-up"></i> Like</a>
-            &nbsp&nbsp
-            <a class="" href="#">
-              <i class="fas fa-star fa-rated"></i>
-              <i class="fas fa-star fa-rated"></i>
-              <i class="fas fa-star fa-rated"></i>
-              <i class="fas fa-star-half-alt fa-rated"></i>
-              <i class="far fa-star fa-rated"></i>
-            </a>
-            <span class="float-right">
-              <a class="more" href="#"> <i class="fas fa-star"></i> Favourite</a>
-              &nbsp
-              <a class="more" href="#"> <i class="far fa-bookmark"></i> &nbspBookmark</a>
-              &nbsp
-              <a class="more" href="javascript:;" data-toggle="modal" data-target="#report"> <i class="fas fa-exclamation-circle"></i> Report</a>
-            </span>
-          </div>
-        </div>
-
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" href="#comments" data-toggle="tab" role="tab" aria-controls="comments">2 Comment(s) <i class="far fa-comment-alt"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#likes" data-toggle="tab" role="tab" aria-controls="likes">3 Like(s) <i class="far fa-thumbs-up"></i></a>
-          </li>
-        </ul>
-
-        <div class="tab-content" id="myTabContent">
-
-          <div class="tab-pane fade show active" id="comments" role="tabpanel" aria-labelledby="tab">
-            <div class="col-md-12">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-md-1 col-sm-2 col-2">
-                      <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar message-avatar rounded-circle">
-                    </div>
-                    <div class="col-md-11 col-sm-10 col-10">
-                      <div class=" message">
-                        <a href="#">Edward Snowden</a>
-                        <span class="float-right text-muted"> <i class="fas fa-clock"></i> Nov 8 2018</span>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit from Russia!
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-md-1 col-sm-2 col-2">
-                      <img src="assets/img/default-avatar1.jpg" alt="follower avatar" class="followers-avatar message-avatar rounded-circle">
-                    </div>
-                    <div class="col-md-11 col-sm-10 col-10">
-                      <div class="message">
-                        <a href="#">Morty Rickson</a>
-                        <span class="float-right text-muted"> <i class="fas fa-clock"></i> Nov 8 2018</span>
-                        <br>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit from the future!
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <form class="" action="" method="post">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Enter comment..." aria-label="Search Content" aria-describedby="basic-addon2">
-                      <div class="input-group-append">
-                        <button class="btn btn-outline-info" type="button"> <i class="fas fa-comment-alt"></i> Submit</button>
-                      </div>
-                    </div>
-                  </form>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="tab-pane fade" id="likes" role="tabpanel" aria-labelledby="tab">
             <div class="col-md-12">
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
@@ -196,68 +137,32 @@
                   <a href="#">Motty Rickson</a>
                   <span class="float-right text-muted"> <i class="fas fa-clock"></i> Nov 8 2018</span>
                 </li>
-                <br />
-                <a href="likes.html" class="btn btn-block btn-lg btn-light">Load More...</a>
               </ul>
             </div>
           </div>
-
         </div>
 
 
-      </div>
 
-    </div>
 
-    <!-- Report Modal -->
-    <div class="modal fade" id="report" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <h5>Report Article.</h5>
-            <hr>
-            <div class="form">
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="spam">
-                <label class="form-check-label" for="spam"> Spam</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="spam">
-                <label class="form-check-label" for="spam"> Harassment</label>
-              </div>
-              <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="spam">
-                <label class="form-check-label" for="spam"> Rules Violation</label>
-              </div>
-              <br>
-              <button type="submit" class="btn btn-sm btn-success">Submit</button>
-              <button type="button" class="btn btn-sm btn-secondary float-right" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="assets/js/custom.js" charset="utf-8"></script>
-    <script type="text/javascript">
-      $(function() {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
+  </div>
+  <!-- container end-->
 
-
-      $.get("./loaders/article-loader.html", function(data) {
-        $("#article-content").html(data);
-        setTimeout(function() {
-          $("#loader-data").addClass("loader-data-hide");
-          $("#loaded-data").addClass("loaded-data-show");
-        }, 3000);
-      });
-    </script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="assets/js/custom.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    //tooltip initialize
+    $(function() {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>
